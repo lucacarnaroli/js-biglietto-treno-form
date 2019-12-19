@@ -1,0 +1,9 @@
+.prezzo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.prezzo h3, p {
+  margin-left: 10px;
+}
