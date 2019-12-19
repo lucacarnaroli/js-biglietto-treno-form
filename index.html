@@ -7,31 +7,71 @@
   </head>
   <body>
     <div class="section-biglietto">
+      <h2 class="title">Calcola il prezzo del tuo biglietto</h2>
       <div class="form">
         <div class="row">
           <div class="col">
-            <label for="">Nome Cognome</label>
-            <input type="number" name="" value="" placeholder="inserisceil tuo nome">
+            <label for="nome-pax">Nome Cognome</label>
+            <input id="nome-pax" type="text" name="" value="" placeholder="Inserisce il tuo nome">
           </div>
-        </div>
-        <div class="row">
+
+
           <div class="col">
-            <label for="">Km da percorrere</label>
-            <input type="number" name="" value="" placeholder="Km che devi percorrere">
+            <label for="km">Km da percorrere</label>
+            <input id="km" type="number" name="" value="" placeholder="km da percorrere">
           </div>
-        </div>
-        <div class="row">
+
+
           <div class="col">
-            <label for="">Fascia d'età</label>
-            <select class="" name="Fascia d'età">
+            <label for="fascia-età">Fascia d'età</label>
+            <select id="fascia-età" class="" name="Fascia d'età">
               <option value="Minorenni">Minorenni</option>
               <option value="Standard">Standard</option>
-              <option value="Over 65">Over 65</option>
+              <option value="Over65">Over 65</option>
             </select>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="button-genera-annulla">
+            <button id="genera" class="btn" type="button" name="button">Genera</button>
+            <button id="annulla" class="btn" type="button" name="button">Annulla</button>
           </div>
         </div>
       </div>
     </div>
+    <!-- stampa-biglietto -->
+    <h2 class="title">Il tuo biglietto</h2>
+    <div id="bigliettodiv" class="biglietto hidden">
+      <h2>Dettaglio passeggeri</h2>
+      <div class="stampa-biglietto row">
+        <div class="dettagli-nomepax">
+          <h3>Nome passegero</h3>
+          <h4 id="nome-passeggero"></h4>
+        </div>
+        <div class="dettagli-biglietto ">
+          <table>
+            <thead>
+              <tr>
+                <th>Offerta</th>
+                <th>Carrozza</th>
+                <th>Codice CP</th>
+                <th>Costo biglietto</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td id="offerta"></td>
+                <td id="carrozza"></td>
+                <td id="codice-cp"></td>
+                <td id="costo-biglietto"></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
 
 
     <!-- <div class="prezzo">
